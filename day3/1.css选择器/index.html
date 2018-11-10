@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<titl1e>css选择器</title>
+		<style>
+			div{
+				width:100px;
+				height:100px;
+				background:#EB7B2D;
+			}
+			/*元素选择器*/
+
+			.aa{
+				width:100px;
+				height:100px;
+				background:#4CB2D4;
+			}
+			/*CSS 类选择器*/
+
+			#ab{
+				width:100px;
+				height:100px;
+				background:#F3A530;
+			}
+			/*CSS ID 选择器*/
+
+			h1,h2,h3,h4{
+				color:blue;
+			}
+			/*选择器分组*/
+
+			a[href][title]{
+				color:red;
+			}
+			/*有href,title属性的a标签*/
+			input[type="button"]{
+				color:red;
+			}
+
+			p span{
+				color:red;
+			}
+			/*后代选择器*/
+			
+			h1 > strong{
+				color:red;
+			}
+			/*与后代选择器相比，子元素选择器（Child selectors）只能选择作为某元素子元素的元素。   第一个元素*/
+
+			li + li {
+				font-weight:bold;
+			}
+			/*相邻兄弟选择器（Adjacent sibling selector）可选择紧接在另一元素后的元素，且二者有相同父元素。*/
+
+			a:link {color: #FF0000}		/* 未访问的链接 */
+			a:visited {color: #00FF00}	/* 已访问的链接 */
+			a:hover {color: #FF00FF}	/* 鼠标移动到链接上 */
+			a:active {color: #0000FF}	/* 选定的链接 */
+			/*CSS 伪类用于向某些选择器添加特殊的效果。*/
+		</style>
+	</head>
+	<body>
+		<div></div>
+
+		<div class="aa"></div>
+
+		<div id="ab"></div>
+
+		<h1>1</h1>
+		<h2>2</h2>
+		<h3>3</h3>
+		<h4>4</h4>
+
+		<a href="" title="">1</a>
+		<a href="">2</a>
+		<a >3</a>
+		<input type="text" value="sdfsdf">
+		<input type="button" value="按钮">
+
+		<p>sdafjhasdjkfh <span>kjsadfhjlasdh</span>fghfgb</p>
+
+		<h1>This is <strong>very</strong> <strong>very</strong> important.</h1>
+		<h1>This is <em>really <strong>very</strong></em> important.</h1>
+
+		<ul>
+		    <li>List item 1</li>
+		    <li>List item 2</li>
+		    <li>List item 3</li>
+	 	</ul>
+		<ol>
+		    <li>List item 1</li>
+		    <li>List item 2</li>
+		    <li>List item 3</li>
+		</ol>
+
+		<a href="">123</a>
+	</body>
+</html>

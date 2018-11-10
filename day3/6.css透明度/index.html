@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>CSS透明度</title>
+		<style>
+			div{
+				width:100px;
+				height:100px;
+			}
+			.opa{
+				background-color:#F9ED3A;
+				opacity:0.5;				/*1不透明*/
+				filter:alpha(opacity=50);	/*针对IE8以及更早的版本*/
+			}
+			.opac{
+				background-color:#F9ED3A;
+				opacity:1;
+				filter: alpha(opacity=100);
+			}
+			.opaci{
+				background-color:#F9ED3A;
+				opacity:0.1;
+				filter: alpha(opacity=10);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="opa">0.5</div>
+		<div class="opac">1</div>
+		<div class="opaci">0.1</div>
+	</body>
+</html>

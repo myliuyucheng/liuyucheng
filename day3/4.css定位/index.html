@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>css定位</title>
+		<style>
+			div{
+				width:100px;
+				height:100px;
+			}
+			.aa{
+				background:#FF7F41;
+			}
+			.ab{
+				background:#41A7FF;
+				float:right;
+			}
+			.ac{
+				background:#EC4A94;
+			}
+			.ad{
+				background:#88C542;
+				float:right;
+			}
+			/*在本行浮动，并不在本行的文档流*/
+
+			.pos div[class="rel"]{
+				background-color:#EB7B2D;
+				position:relative;
+				left:100px;
+			}
+			/*根据自己原来位置进行移动*/
+			.pos div[class="abs"]{
+				background-color:#4CB2D4;
+				position:absolute;
+				left:100px;
+				top:10px;
+			}
+			/*根据网页的位置进行移动*/
+			.pos div[class="fix"]{
+				background-color:#F9ED3A;
+				position:fixed;
+			}
+			/*无论怎么运动定位在一个地方*/
+		</style>
+	</head>
+	<body>
+		<div class="aa"></div>
+		<div class="ab">浮动文档流</div>
+		<div class="ac"></div>
+		<div class="ad">浮动</div>
+
+		<div class="pos" style="width:1000px;height:1000px;border:1px solid red;">
+			<div class="rel">rel</div>
+			<div class="abs">abs</div>
+			<div class="fix">fix</div>
+		</div>
+	</body>
+</html>

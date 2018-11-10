@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>form表单</title>
+	</head>
+	<body>
+		<form action="index.php" method="GET">
+			<!-- action指定某个服务器脚步处理被提交的表单 -->
+			<!-- 规定提交表单时所使用的HTTP方法（GET或者POST） -->
+
+			<!--何时使用 GET？
+			您能够使用 GET（默认方法）：
+			如果表单提交是被动的（比如搜索引擎查询），并且没有敏感信息。
+			当您使用 GET 时，表单数据在页面地址栏中是可见的：
+			action_page.php?firstname=Mickey&lastname=Mouse
+			注释：GET 最适合少量数据的提交。浏览器会设定容量限制。-->
+
+			<!--何时使用 POST？
+			您应该使用 POST：
+			如果表单正在更新数据，或者包含敏感信息（例如密码）。
+			POST 的安全性更加，因为在页面地址栏中被提交的数据是不可见的。-->
+			<input type="text" name="firstname">
+			<!-- 文本 -->
+			<br>
+			<input type="password" name="psw">
+			<!-- 密码字段 -->
+			<br>
+			<label for="male">Male</label>
+			<!-- <label> 标签为 input 元素定义标注（标记）。 -->
+			<!-- for 属性规定 label 与哪个表单元素绑定。 -->
+			<input type="radio" name="sex" value="male" id="male">
+			<br>
+			<label for="female">Female</label>
+			<input type="radio" name="sex" value="female" id="female">
+			<!-- 点选按钮 -->
+			<!--Name 属性
+			如果要正确地被提交，每个输入字段必须设置一个 name 属性。有Name属性的才会提交-->
+			<br>
+			<input type="submit" value="提交按钮">
+			<!-- 提交按钮 -->
+			<!--定义用于向表单处理程序（form-handler）提交表单的按钮。
+			表单处理程序通常是包含用来处理输入数据的脚本的服务器页面。
+			表单处理程序在表单的 action 属性中指定：-->
+			<br>
+			<input type="image">
+			<br>
+			<input type="file">
+			<!-- 用于文件上传。定义输入字段和 "浏览"按钮，供文件上传。 -->
+			<br>
+			<input type="reset">
+			<!-- 定义重置按钮。重置按钮会清除表单中的所有数据。 -->
+			<br>
+			<input type="checkbox" name="check" value="我">我
+			<input type="checkbox" name="check" value="你">你
+			<!-- 定义复选框。 -->
+			<input type="button" onclick="alert('Hello World!');" value="Click Me!">
+		</form>
+	</body>
+</html>

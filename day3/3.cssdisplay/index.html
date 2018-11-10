@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>cssdisplay</title>
+		<style>
+			div{
+				width:100px;
+				height:100px;
+			}
+			#aa{
+				background:red;
+			}
+			#ab{
+				background:black;
+				color:red;
+				display:inline;
+			}
+			#ac{
+				background:#EC4A94;
+				display:inline;
+			}
+			#ad{
+				background:#88C542;
+				display:inline-block;
+			}
+			#ae{
+				background:#4CB2D4;
+				display:block;
+			}
+			#af{
+				background:#EB7B2D;
+				display:none;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="aa">
+			块级元素
+		</div>
+		<div id="ab">
+			inline内联元素
+			会改变原有大小
+		</div>
+		<div id="ac">
+			内联元素
+		</div>
+		<div id="ad">
+			inline-block行内块元素。
+			不改变大小
+		</div>
+		<div id="ae">
+			block块级元素
+		</div>
+		<div id="af">
+			none此元素不会被显示。
+		</div>
+	</body>
+</html>

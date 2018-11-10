@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS背景</title>
+	<style>
+		*{
+			padding:0px;
+			margin:0px;
+		}
+		div{
+			width:100px;
+			height:100px;
+			margin:10px;
+		}
+		.one{
+			background-color:#844D9E;		/*背景颜色*/
+			background-color:rgb(0,0,0);	/*颜色表示*/
+			background-color:red;
+		}
+		.two{
+			background-image:url("1.jpg");
+			color:#fff;
+		}
+		.three{
+			background-image:url("2.png");
+			background-repeat:repeat-y;			/*repeat-x水平方向重复，repeat-y垂直方向重复，no-repeat仅显示一次*/
+		}
+		.four{
+			background-color:#844D9E;
+			background-image:url("2.png");
+			background-repeat:no-repeat;
+			background-position:center;			/*或者是两个数值%、px 第一个为水平，第二个为垂直*/	/*center、top、bottom、right、left盒子的各个地方*/
+		}
+		body{
+			height:3000px;
+			overflow:scroll;					/*添加滚动条*/
+			background-image:url("2.png");
+			background-repeat:no-repeat;
+			background-position:center;
+			background-attachment:fixed;		/*图像固定在中间，然后在设置背景关联*/
+		}
+	</style>
+</head>
+<body>
+	<div class="one">背景颜色</div>
+	<div class="two">背景照片</div>
+	<div class="three">背景重复</div>
+	<div class="four">背景定位</div>
+	<div class="five">背景关联body属性</div>
+</body>
+</html>

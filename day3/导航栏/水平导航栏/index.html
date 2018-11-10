@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>水平导航栏</title>
+	<style>
+		*{
+			padding:0px;
+			margin:0px;
+		}
+		ul{
+			width:400px;
+			height:25px;
+			list-style:none;		/*去掉UL的小圆点*/
+			margin:0 auto;			/*第一个为上下，第二个为左右*/
+			background-color:#000;
+
+		}
+		ul li{
+			float:left;
+			width:25%;
+			height:100%;
+		}
+		a{
+			text-decoration:none;	/*去掉A标签的下划线*/
+			display:block;
+			color:#fff;
+			text-align:center;		/*水平居中*/
+			line-height:25px;		/*垂直居中*/
+		}
+		a:hover{
+			background-color:#4CB2D4;
+			color:#EB7B2D;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li><a href="">Home</a></li>
+		<li><a href="">News</a></li>
+		<li><a href="">Contact</a></li>
+		<li><a href="">About</a></li>
+	</ul>
+</body>
+</html>
